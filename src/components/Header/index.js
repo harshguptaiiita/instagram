@@ -1,13 +1,13 @@
 import React from "react";
-import "./Header.css";
+import styles from "./Header.module.scss";
 
 class Header extends React.Component{
     render(){
         return (
-           <nav className="Nav">
-             <div className="Nav-menus">
-               <div className="Nav-brand">
-                 <a className="Nav-brand-logo" href="/">
+           <nav className={styles.Nav}>
+             <div className={styles.NavMenus}>
+               <div className={styles.NavBrand}>
+                 <a className={styles.NavBrandLogo} href="/">
                    Instagram
                  </a>
                </div>
@@ -16,5 +16,4 @@ class Header extends React.Component{
        );
     }   
 }
-
 export default Header;
